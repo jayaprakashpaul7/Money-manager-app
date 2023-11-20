@@ -1,0 +1,117 @@
+/* Write your CSS here */
+.bg {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  padding: 20px;
+}
+.app-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid;
+}
+.name-bg {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  padding: 20px;
+  width: 100%;
+  max-width: 80%;
+  text-align: center;
+  border-radius: 17px;
+  background-size: cover;
+}
+.name {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 27px;
+}
+.greet {
+  font-family: 'Roboto';
+  font-weight: 400;
+  min-width: 100%;
+  max-width: 80%;
+}
+.app-name {
+  font-weight: 500;
+  color: #0b69ff;
+}
+.money-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  max-width: 80%;
+  border: 1px solid;
+}
+.form-transaction-c {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #7e858e;
+  border-radius: 17px;
+  width: 100%;
+  max-width: 80%;
+  padding: 17px;
+}
+
+.add-transaction-heading {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e293b;
+}
+label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+}
+input,
+select {
+  height: 44px;
+  width: 220px;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #7e858e;
+  background-color: transparent;
+  margin-bottom: 12px;
+  border-radius: 7px;
+  font-size: 18px;
+}
+.add-btn {
+  height: 34px;
+  width: 90px;
+  border-radius: 5px;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  color: white;
+}
+.table-c {
+  padding: 17px;
+  margin-top: 20px;
+  border: 1px solid #707175;
+  border-radius: 17px;
+}
+.table-header {
+  display: flex;
+  list-style-type: none;
+  border: 1px solid #d7dfe9;
+  border-radius: 0px;
+  margin: 0;
+}
+.table-header-cell {
+  margin-left: 32px;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 500;
+  flex-grow: 1;
+}
