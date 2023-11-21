@@ -12,13 +12,12 @@
   align-items: center;
   width: 100%;
   padding: 20px;
-  border: 1px solid;
 }
 .name-bg {
   background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
   padding: 20px;
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   text-align: center;
   border-radius: 17px;
   background-size: cover;
@@ -44,49 +43,71 @@
   align-items: center;
   width: 100%;
   padding: 0px;
-  max-width: 80%;
-  border: 1px solid;
+  max-width: 90%;
 }
+@media (min-width: 552px) {
+  .money-details-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .form-transaction-c {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 552px) {
+  .form-transaction-c {
+    flex-direction: row;
+  }
+}
+
 form {
   display: flex;
   flex-direction: column;
   border: 1px solid #7e858e;
   border-radius: 17px;
   width: 100%;
-  max-width: 80%;
+  max-width: 100%;
   padding: 17px;
 }
-
+@media (min-width: 552px) {
+  form {
+    width: 50%;
+    max-width: 50%;
+  }
+}
 .add-transaction-heading {
   font-family: 'Roboto';
   font-size: 17px;
   font-weight: 700;
   color: #1e293b;
 }
+
 label {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: 'Roboto';
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
 }
+
 input,
 select {
   height: 44px;
-  width: 220px;
+  width: 100%;
+  max-width: 70%;
   outline: none;
   padding: 5px;
   border: 1px solid #7e858e;
   background-color: transparent;
   margin-bottom: 12px;
   border-radius: 7px;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 540;
 }
+
 .add-btn {
   height: 34px;
   width: 90px;
@@ -95,23 +116,39 @@ select {
   font-family: 'Roboto';
   color: white;
 }
+
 .table-c {
-  padding: 17px;
+  padding: 15px;
+  padding-right: 0;
   margin-top: 20px;
   border: 1px solid #707175;
   border-radius: 17px;
+  width: 100%;
 }
+@media (min-width: 552px) {
+  .table-c {
+    width: 50%;
+    padding: 17px;
+    max-width: 50%;
+    margin-left: 20px;
+  }
+}
+
 .table-header {
   display: flex;
   list-style-type: none;
   border: 1px solid #d7dfe9;
   border-radius: 0px;
-  margin: 0;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
 }
+
 .table-header-cell {
   margin-left: 32px;
   font-family: 'Roboto';
   font-size: 17px;
   font-weight: 500;
+  width: 100%;
   flex-grow: 1;
 }

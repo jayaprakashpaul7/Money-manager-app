@@ -3,8 +3,9 @@
   display: flex;
   border: 1px solid #d7dfe9;
   border-top: none;
+  flex-grow: 1;
   border-radius: 0px;
-  margin: 0;
+  align-items: center;
 }
 .table-cell {
   margin-left: 32px;
@@ -14,4 +15,14 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
+}
+.del-btn {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+.del-icon {
+  height: 40px;
+  width: 40px;
 }

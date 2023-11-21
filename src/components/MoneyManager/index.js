@@ -107,12 +107,12 @@ class MoneyManager extends Component {
             <form>
               <h1 className="add-transaction-heading">Add Transaction</h1>
 
-              <label htmlFor="title">Title</label>
+              <label htmlFor="title">TITLE</label>
               <input
                 type="text"
                 onChange={this.onChangeTitle}
                 value={title}
-                placeholder="Title"
+                placeholder="TITLE"
               />
 
               <label htmlFor="amount">AMOUNT</label>
@@ -120,7 +120,7 @@ class MoneyManager extends Component {
                 type="text"
                 onChange={this.onChangeAmount}
                 value={amount}
-                placeholder="Amount"
+                placeholder="AMOUNT"
               />
 
               <label htmlFor="Type">Type</label>
