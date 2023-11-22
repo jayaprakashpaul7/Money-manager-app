@@ -82,7 +82,7 @@ class MoneyManager extends Component {
     const {title, amount, transactions} = this.state
     const income = this.income1()
     const expenses = this.expenses1()
-    const balance = parseInt(income) - parseInt(expenses)
+    const balance = income - expenses
     return (
       <div className="bg">
         <div className="app-bg">
@@ -112,6 +112,7 @@ class MoneyManager extends Component {
                 type="text"
                 onChange={this.onChangeTitle}
                 value={title}
+                id="title"
                 placeholder="TITLE"
               />
 
@@ -120,23 +121,20 @@ class MoneyManager extends Component {
                 type="text"
                 onChange={this.onChangeAmount}
                 value={amount}
+                id="amount"
                 placeholder="AMOUNT"
               />
 
               <label htmlFor="Type">Type</label>
-              <select onChange={this.onChangeType}>
-                <option
-                  value={transactionTypeOptions[0].displayText}
-                  id={transactionTypeOptions[0].optionId}
-                >
-                  Income
-                </option>
-                <option
-                  value={transactionTypeOptions[1].displayText}
-                  id={transactionTypeOptions[1].optionId}
-                >
-                  Expenses
-                </option>
+              <select id="Type" onChange={this.onChangeType}>
+                {transactionTypeOptions.map(eachOption => (
+                  <option
+                    value={eachOption.displayText}
+                    key={eachOption.optionId}
+                  >
+                    {eachOption.displayText}
+                  </option>
+                ))}
               </select>
               <button
                 onClick={this.addTransaction}
@@ -149,7 +147,7 @@ class MoneyManager extends Component {
 
             <ul className="table-c">
               <h1>History</h1>
-              <li className="table-header">
+              <li key={} className="table-header">
                 <p className="table-header-cell title-column">Title</p>
                 <p className="table-header-cell">Amount</p>
                 <p className="table-header-cell">Type</p>

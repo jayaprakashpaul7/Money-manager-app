@@ -3,7 +3,6 @@
   display: flex;
   min-height: 100vh;
   min-width: 100vw;
-  max-width: 100vw;
   padding: 20px;
 }
 .app-bg {
@@ -22,6 +21,11 @@
   border-radius: 17px;
   background-size: cover;
 }
+@media (min-width: 552px) {
+  .name-bg {
+    text-align: start;
+  }
+}
 .name {
   font-family: 'Roboto';
   font-weight: 500;
@@ -33,9 +37,15 @@
   min-width: 100%;
   max-width: 80%;
 }
+
 .app-name {
   font-weight: 500;
   color: #0b69ff;
+}
+@media (min-width: 552px) {
+  .app-name {
+    margin-left: 4px;
+  }
 }
 .money-details-container {
   display: flex;
@@ -55,6 +65,7 @@
 .form-transaction-c {
   width: 100%;
   display: flex;
+  max-width: 90%;
   flex-direction: column;
 }
 @media (min-width: 552px) {
@@ -115,6 +126,8 @@ select {
   background-color: #0b69ff;
   font-family: 'Roboto';
   color: white;
+  border: 0;
+  cursor: pointer;
 }
 
 .table-c {
@@ -128,7 +141,6 @@ select {
 @media (min-width: 552px) {
   .table-c {
     width: 50%;
-    padding: 17px;
     max-width: 50%;
     margin-left: 20px;
   }
