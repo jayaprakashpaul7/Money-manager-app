@@ -147,7 +147,7 @@ class MoneyManager extends Component {
 
             <ul className="table-c">
               <h1>History</h1>
-              <li key={} className="table-header">
+              <li className="table-header">
                 <p className="table-header-cell title-column">Title</p>
                 <p className="table-header-cell">Amount</p>
                 <p className="table-header-cell">Type</p>
